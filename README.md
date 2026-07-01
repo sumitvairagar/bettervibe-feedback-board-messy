@@ -1,15 +1,15 @@
 # feedback board (messy twin — DO NOT ship this)
 
-This is a **deliberately bad** vibe-coded version of the same feedback board as
-`../feedback-board-gold`. Same feature, opposite quality. It exists to prove
-`bettervibe-audit` catches real problems: it scores ~30 (F), the gold repo
-scores ~100 (A).
+[![Launch Readiness](https://img.shields.io/badge/Launch_Readiness-16%2F100_(F)-critical)](./LAUNCH-READINESS.md)
 
-What's wrong with it (on purpose):
-- One 200-line god file with three copy-pasted CRUD blocks (heavy duplication)
-- Hardcoded secrets + a committed `.env`, no `.gitignore`
-- `any` everywhere, no `tsconfig`, no strictness
-- Zero tests, no coverage, no lint config, no CI
-- Empty `catch` that swallows every error
+👉 **[See why it scores 16/100 →](./LAUNCH-READINESS.md)**
 
-Do not use this as a template. That's the point.
+A **deliberately bad** vibe-coded version of the same feedback board as
+[`feedback-board-gold`](https://github.com/sumitvairagar/bettervibe-feedback-board-gold)
+(which scores 100/100). Same feature, opposite quality. It exists to prove
+`bettervibe-audit` catches real problems.
+
+What's wrong with it, on purpose: one god file with copy-pasted CRUD blocks,
+hardcoded secrets + a committed `.env`, `any` everywhere, no `tsconfig`, zero
+tests, no lint, no CI, an empty `catch` that swallows every error, and this thin
+README. **All secrets are fake placeholders.** Do not use this as a template.

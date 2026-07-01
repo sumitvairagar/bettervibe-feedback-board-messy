@@ -2,7 +2,7 @@
 
 **Repo:** `samples/feedback-board-messy`  ·  **1 source files**  ·  2026-07-01
 
-## 16/100 — F — do not put clients on this
+## 14/100 — F — do not put clients on this
 
 | Category | Score |
 |---|---|
@@ -11,7 +11,7 @@
 | 🏗️ Architecture & Maintainability | ████░░░░░░ 38% |
 | 🔁 Repetition (DRY) | ░░░░░░░░░░ 0% |
 | ⚙️ CI / CD | ░░░░░░░░░░ 0% |
-| 📄 Documentation & Handoff | ████░░░░░░ 40% |
+| 📄 Documentation & Handoff | ██░░░░░░░░ 20% |
 
 ## Top things to fix before launch
 
@@ -61,10 +61,11 @@
 - [ ] **CI pipeline present** — no CI — nothing runs on push/PR
 - [ ] **CI runs tests / lint** — no CI
 
-### 📄 Documentation & Handoff — 4/10 (40%)
+### 📄 Documentation & Handoff — 2/10 (20%)
 *Can a developer you've never met pick this up? Handoff is the whole promise.*
 
 - [x] **README present** — README found
+- [ ] **README is substantive (sections + usage + examples)** — thin README — too short, few sections, no code example, no usage/setup
 - [ ] **Architecture documented** — no architecture doc
 - [ ] **.env.example for onboarding** — no .env.example — setup is guesswork
 
