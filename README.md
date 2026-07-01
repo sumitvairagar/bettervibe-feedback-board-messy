@@ -1,8 +1,8 @@
 # feedback board (messy twin — DO NOT ship this)
 
-[![Launch Readiness](https://img.shields.io/badge/Launch_Readiness-16%2F100_(F)-critical)](./LAUNCH-READINESS.md)
+[![Launch Readiness](https://img.shields.io/badge/Launch_Readiness-14%2F100_%28F%29-critical)](./LAUNCH-READINESS.md)
 
-👉 **[See why it scores 16/100 →](./LAUNCH-READINESS.md)**
+👉 **[See why it scores 14/100 →](./LAUNCH-READINESS.md)**
 
 A **deliberately bad** vibe-coded version of the same feedback board as
 [`feedback-board-gold`](https://github.com/sumitvairagar/bettervibe-feedback-board-gold)
