@@ -1,6 +1,6 @@
 # Launch Readiness Report
 
-**Repo:** `samples/feedback-board-messy`  ·  **1 source files**  ·  2026-07-01
+**Repo:** `samples/feedback-board-messy`  ·  **1 source files**  ·  **Stack:** TypeScript (1)  ·  2026-07-02
 
 ## 14/100 — F — do not put clients on this
 
@@ -16,8 +16,13 @@
 ## Top things to fix before launch
 
 1. **[Test Coverage] Automated tests exist** — 0 test file(s) for 1 source file(s)
-2. **[Security] No hardcoded secrets** — AWS access key in app.ts
-3. **[Repetition (DRY)] Low code duplication** — 25.7% of 6-line blocks structurally duplicated (identifiers normalized)
+2. **[Security] No hardcoded secrets** — 2 potential secret(s) found
+   - `app.ts:6` hardcoded credential
+   - `app.ts:7` AWS access key
+3. **[Repetition (DRY)] Low code duplication** — 36.2% of 6-line blocks structurally duplicated
+   - `app.ts:29` duplicate of app.ts:15
+   - `app.ts:30` duplicate of app.ts:16
+   - `app.ts:31` duplicate of app.ts:17
 4. **[CI / CD] CI pipeline present** — no CI — nothing runs on push/PR
 5. **[Test Coverage] Coverage measured** — no coverage config — can't prove what's tested
 
@@ -35,13 +40,16 @@
 ### 🔐 Security — 4/26 (15%)
 *~45% of AI-generated code ships with a vulnerability. A leaked key or committed secret is the fastest way to get owned.*
 
-- [ ] **No hardcoded secrets** — AWS access key in app.ts
+- [ ] **No hardcoded secrets** — 2 potential secret(s) found
+  - `app.ts:6` hardcoded credential
+  - `app.ts:7` AWS access key
 - [ ] **No committed .env file** — committed & not ignored: .env
+  - `.env` committed environment file
 - [ ] **.gitignore covers env files** — .env not covered by .gitignore
 - [x] **No known dependency vulnerabilities** — Could not run `npm audit` (offline or no lockfile) — verify manually.
 
 ### 🏗️ Architecture & Maintainability — 9/24 (38%)
-*Clean structure and type safety are what let a real dev team take this over without a rewrite.*
+*Clean structure and type safety are what let a real team take this over without a rewrite.*
 
 - [x] **No oversized 'god' files** — no file over 400 lines
 - [ ] **Modular structure (separated concerns)** — ~163 lines concentrated in one/two dirs — not separated
@@ -53,7 +61,12 @@
 ### 🔁 Repetition (DRY) — 0/8 (0%)
 *Copy-paste is the signature smell of AI-generated code — GitClear measured 4x duplication after AI adoption. It's where bugs multiply.*
 
-- [ ] **Low code duplication** — 25.7% of 6-line blocks structurally duplicated (identifiers normalized)
+- [ ] **Low code duplication** — 36.2% of 6-line blocks structurally duplicated
+  - `app.ts:29` duplicate of app.ts:15
+  - `app.ts:30` duplicate of app.ts:16
+  - `app.ts:31` duplicate of app.ts:17
+  - `app.ts:32` duplicate of app.ts:18
+  - `app.ts:33` duplicate of app.ts:19
 
 ### ⚙️ CI / CD — 0/10 (0%)
 *Without CI, tests never run automatically — the safety net exists but nobody's holding it.*
