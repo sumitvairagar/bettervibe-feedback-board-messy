@@ -5,6 +5,10 @@
     "start": "ts-node app.ts"
   },
   "dependencies": {
+    "axios": "0.21.0",
+    "lodash": "4.17.11",
+    "minimist": "1.2.0",
+    "mysql": "2.18.1",
     "ts-node": "^10.0.0"
   }
 }
